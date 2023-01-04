@@ -2,10 +2,10 @@ import { Navbar } from 'flowbite-react'
 
 export default function () {
   return (
-    <Navbar className="w-screen" fluid={true} rounded={false}>
+    <Navbar className="w-screen" fluid={false} rounded={false}>
       <Navbar.Brand href="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Password Meter
+          PasswordMeter
         </span>
       </Navbar.Brand>
       <Navbar.Toggle />

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
+    "@preact/signals-react": "^1.2.2",
     "flowbite": "^1.6.0",
     "flowbite-react": "^0.3.7",
     "next": "13.1.1",
