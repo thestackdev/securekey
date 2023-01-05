@@ -1,18 +1,18 @@
 {
   "0": {
-    "progress": 20,
+    "progress": 0,
     "color": "red"
   },
   "1": {
-    "progress": 40,
+    "progress": 25,
     "color": "red"
   },
   "2": {
-    "progress": 60,
+    "progress": 50,
     "color": "yellow"
   },
   "3": {
-    "progress": 80,
+    "progress": 75,
     "color": "yellow"
   },
   "4": {
