@@ -1,4 +1,4 @@
-import { passwordStrength, passwordInput } from 'state/passwordStrength'
+import { passwordInput, passwordStrength } from 'state/passwordStrength'
 import config from '../utils/config.json'
 
 export default function Response() {
@@ -36,8 +36,8 @@ export default function Response() {
             Tips to increase your password strength:
           </h2>
           <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-            {passwordStrength.value.feedback.suggestions.map((e) => {
-              return <li>{e}</li>
+            {passwordStrength.value.feedback.suggestions.map((e, key) => {
+              return <li key={key}>{e}</li>
             })}
           </ul>
         </div>

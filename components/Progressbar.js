@@ -1,16 +1,21 @@
-import { Progress } from 'flowbite-react'
+import { passwordInput, passwordStrength } from 'state/passwordStrength'
 import config from '../utils/config.json'
-import { passwordStrength, passwordInput } from 'state/passwordStrength'
 
 export default function Progressbar() {
   if (!passwordInput.value) return <></>
 
+  console.log(config[passwordStrength.value.score].progress)
+
   return (
     <div className="w-full max-w-xl mt-2">
-      <Progress
-        progress={config[passwordStrength.value.score].progress}
-        color={config[passwordStrength.value.score].color}
-      />
+      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+        <div
+          style={{
+            width: config[passwordStrength.value.score].progress + '%',
+            backgroundColor: config[passwordStrength.value.score].color,
+          }}
+        />
+      </div>
     </div>
   )
 }
