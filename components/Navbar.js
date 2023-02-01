@@ -4,7 +4,7 @@ export default function () {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="/" className="flex items-center">
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            Secure key
+            Securekey
           </span>
         </a>
         <button
